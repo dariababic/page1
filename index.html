@@ -1,0 +1,153 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Zadar</title>
+<link rel="stylesheet" href="style1.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function() {
+		$('.js-scrollTo').on('click', function() { 
+			var page = $(this).attr('href');
+			var speed = 750; 
+			$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); 
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+<header>
+    <nav>
+         <ul>
+             <li><a class="js-scrollTo" href="#about">About Zadar</a></li>
+             <li><a class="js-scrollTo" href="#last">Map</a></li>
+        </ul>
+    <div class="Logo">
+        <img src="https://i.postimg.cc/x8Vhj2yZ/Facebook-Post-940x788-px-1.png">
+        </div>
+        
+    </nav>
+    <div class="hero">
+    <h1 class="Title">VISIT ZADAR</h1>
+        <h1 class="Subtitle">Adriatic Gem</h1>
+        </div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">🡱
+</button>
+
+<script>
+//button
+var mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+//up
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
+
+<section id="about">
+    <div class="Container">
+    <h2>About Zadar</h2>
+    <div class="Container">
+        <div class="general-container">
+            <input class="radio" type="radio" name="card" id="card-1" checked />
+            <label class="content" for="card-1">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg>
+              </span>
+              <h3 class="card-title">
+                Church of St. Donatus
+                <span class="subtitle">Trg Svete Stošije 4, 23000 Zadar, Croatia</span>
+              </h3>
+            </label>
+            <input class="radio" type="radio" name="card" id="card-2" />
+            <label class="content" for="card-2">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg>
+              </span>
+              <h3 class="card-title">
+                Church Cathedral of St. Stošija 
+                <span class="subtitle">Trg Svete Stošije, 23000 Zadar, Croatia</span>
+              </h3>
+            </label>
+            <input class="radio" type="radio" name="card" id="card-3" />
+            <label class="content" for="card-3">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg>
+              </span>
+              <h3 class="card-title">
+                Five Wells Square
+                <span class="subtitle">Trg pet bunara, 23000 Zadar, Croatia
+                </span>
+              </h3>
+            </label>
+            <input class="radio" type="radio" name="card" id="card-4" />
+            <label class="content" for="card-4">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg>
+              </span>
+              <h3 class="card-title">
+                The Land Gate
+                <span class="subtitle">Ul. Među bedemima, 23000 Zadar, Croatia</span>
+              </h3>
+            </label>
+            <input class="radio" type="radio" name="card" id="card-5" />
+            <label class="content" for="card-5">
+              <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                  </svg>
+              </span>
+              <h3 class="card-title">
+                The Sea Organs
+                <span class="subtitle">Obala kralja Petra Krešimira IV, 23000 Zadar, Croatia</span>
+              </h3>
+            </label>
+          </div>
+
+    </div>
+        </section>
+    
+        <section id="last">
+            <div class="Container">
+            <h2>Find it on a map</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91632.00016827893!2d15.178864072033186!3d44.13493425501038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa62d2c0b88f%3A0x12323e1c13f40784!2sZadar!5e0!3m2!1shr!2shr!4v1643132380897!5m2!1shr!2shr" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+                </section>
+<footer>
+                    <div class="Container">
+
+                <p class="text-center">db - Copyright &copy; 2022.</p>
+                    </div>
+              </footer>
+                
+</body>
+</html>
