@@ -7,6 +7,12 @@
 <link rel="stylesheet" href="style1.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+	
+<script>  
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }; 
+ </script>
 <script>
 	$(document).ready(function() {
 		$('.js-scrollTo').on('click', function() { 
